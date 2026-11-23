@@ -1,4 +1,9 @@
 /*
+font
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap');
+/*
   STYLE GUIDE STYLING 
   Default styling for the style guide 
 */
@@ -30,6 +35,11 @@ section code {
   color:#000000;
 }
 
+h2{ 
+  color: #3815FF;
+}
+
+
 
 /* 
   INTERACTIVE ELEMENTS -------------------
@@ -39,6 +49,7 @@ section code {
 .button-nav {
   display: inline-block;
   font-size: 1rem;
+  font-weight: 300;
   padding: 0.6em 0.9em;
   color: #FFF;
   border: 0.4rem solid #3815FF;
@@ -48,11 +59,37 @@ section code {
   transition: background-color 0.2s ease-out;
 }
 
-
 .button-nav:hover, .button-nav:focus  {
   background-color: #3815FF;
 }
 
+.intext-link {
+  font-size: 1rem;
+  color: #3815FF;
+  background-color: #161616;
+  text-decoration: none;
+  transition: 150ms;
+}
+
+.intext-link:hover, .intext-link:focus {
+  color: white;
+  background-color: #3815FF;
+  text-decoration: none;
+}
+
+.input {
+  background-color: #2b2b2b;
+  border: 1px solid #2b2b2b;
+  padding: 0.6rem;
+  outline: none;
+  border-radius: 3rem;
+  color: white;
+}
+
+input:focus, input:hover {
+  border-color: #3815FF;
+  background-color: #222;
+}
 
 
 
