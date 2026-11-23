@@ -80,9 +80,9 @@ img{
 }
 
 img:focus, img:hover{
-  border-radius: 1rem;
   border: 0.3rem solid #3815FF;
   box-shadow: 0 0 10px #3815FF;
+
 }
 
 
@@ -112,7 +112,7 @@ img:focus, img:hover{
 .button-nav:hover,
 .button-nav:focus {
   background-color: #3815FF;
-  box-shadow: 0 3px #14046e;
+  box-shadow: 0 0 10px #3815FF;
   transform: translateY(-2px);
 }
 
@@ -131,6 +131,7 @@ img:focus, img:hover{
 
 .button:hover, .button-nav:focus  {
   background-color: #3815FF;
+  box-shadow: 0 0 10px #3815FF;
 }
 
 .intext-link {
