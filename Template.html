@@ -17,15 +17,11 @@
   <p>A template you can use to start building out your own style guides with.</p>
 
 
-  <nav>
-
-    <p>
-      Go to:
-      <a href="#interactive_elements">Interactive Elements</a>,
-      <a href="#text_elements">Text Elements</a>,
-      <a href="#combined_elements">Combined Elements</a>,
-    </p>
-
+  <nav class="button-nav-container">
+    <a href="#interactive_elements" class="button-nav">Interactive Elements</a>
+    <a href="#text_elements" class="button-nav">Text Elements</a>
+    <a href="#combined_elements" class="button-nav">Process Analysis</a>
+    <a href="https://github.com/AvalonRE/iat339_project_301477693" class="button-nav">GitHUB</a>
   </nav>
 
 
@@ -39,39 +35,90 @@
       <h2>Navigation Button</h2>
 
       <h3>CSS selector:</h3>
-      <p>.button-nav</p>
+      <p>.button-nav-container .button-nav, .button-nav-selected</p>
 
       <h3>Sample code:</h3>
-      <code>&lt;a href="#" class="button"&gt;Default Button&lt;/a&gt;</code>
+      <code>&lt;nav class="button-nav-container"&gt;
+  &lt;a class="button-nav-selected" href="#"&gt;Home&lt;/a&gt;
+  &lt;a class="button-nav" href="#"&gt;Process Analysis 1&lt;/a&gt;
+  &lt;a class="button-nav" href="#"&gt;Process Analysis 2&lt;/a&gt;
+&lt;/nav&gt;</code>
 
       <h3>Rendered element:</h3>
-      <a class="button-nav" href="#">Default Button</a>
+      <div class="button-nav-container">
+        <a class="button-nav-selected" href="#">Home</a>
+        <a class="button-nav" href="#">Process Analysis 1</a>
+        <a class="button-nav" href="#">Process Analysis 2</a>
+      </div>
 
     </section>
 
     <section>
-      <h2>In-text link</h2>
-      <p>Navigate here: <a href="https://unity.com/games" class="intext-link">in text link to Unity</a></p>
-    </section>
 
-    <section>
-      <h2>Submit/Reset Buttons</h2>
+      <h2>Button</h2>
+
+      <h3>CSS selector:</h3>
+      <p>.button</p>
 
       <h3>Sample code:</h3>
-      <code>&lt;a href="#" class="button-nav"&gt;Default Button&lt;/a&gt;</code>
+      <code>&lt;a class="button" href="#"&gt;Default Button&lt;/a&gt;</code>
+
+      <h3>Rendered element:</h3>
+      <a class="button" href="#">Default Button</a>
+
+    </section>
+
+    <section>
+
+      <h2>In-text link</h2>
+
+      <h3>CSS selector:</h3>
+      <p>.intext-link</p>
+
+      <h3>Sample code:</h3>
+      <code>&lt;p&gt;Navigate here: &lt;a href="https://unity.com/games" class="intext-link"&gt;in text link to Unity&lt;/a&gt;&lt;/p&gt;</code>
+
+      <h3>Rendered element:</h3>
+      <p>Navigate here: <a href="https://unity.com/games" class="intext-link">in text link to Unity</a></p>
+
+    </section>
+
+    <section>
+
+      <h2>Submit/Reset Buttons</h2>
+
+      <h3>CSS selector:</h3>
+      <p>.form</p>
+
+      <h3>Sample code:</h3>
+      <code>&lt;form&gt;
+  &lt;button type="submit" class="form"&gt;Submit&lt;/button&gt;
+  &lt;button type="reset" class="form"&gt;Reset&lt;/button&gt;
+&lt;/form&gt;</code>
 
       <h3>Rendered element:</h3>
       <form>
-        <button type="submit" class = "form">Submit</button>
-        <button type="reset" class = "form">Reset</button>
+        <button type="submit" class="form">Submit</button>
+        <button type="reset" class="form">Reset</button>
       </form>
+
     </section>
 
     <section>
+
       <h2>Text Input Field</h2>
 
+      <h3>CSS selector:</h3>
+      <p>.input</p>
+
+      <h3>Sample code:</h3>
+      <code>&lt;input class="input" type="text" placeholder="Enter your name"&gt;</code>
+
+      <h3>Rendered element:</h3>
       <input class="input" type="text" placeholder="Enter your name">
+
     </section>
+
   </section>
   <!-- // INTERACTIVE ELEMENTS SECTION -->
 
@@ -81,38 +128,87 @@
   <section id="text_elements">
 
     <section>
+
       <h2>Headings</h2>
+
+      <h3>CSS selector:</h3>
+      <p>h1, h2, h3, h4</p>
+
+      <h3>Sample code:</h3>
+      <code>&lt;h1&gt;Header 1&lt;/h1&gt;
+&lt;h2&gt;Header 2&lt;/h2&gt;
+&lt;h3&gt;Header 3&lt;/h3&gt;
+&lt;h4&gt;Header 4&lt;/h4&gt;</code>
+
+      <h3>Rendered element:</h3>
       <div>
+        <h1>Header 1</h1>
+        <h2>Header 2</h2>
+        <h3>Header 3</h3>
+        <h4>Header 4</h4>
+      </div>
 
-      <h1>
-        Header 1
-      </h1>
-
-      <h2>
-        Header 2
-      </h2>
-
-      <h3>
-        Header 3
-      </h3>
-
-      <h4>
-        Header 4
-      </h4>
-        </div>
     </section>
 
     <section>
+
       <h2>Paragraphs</h2>
-      <p>paragraph here</p>
+
+      <h3>CSS selector:</h3>
+      <p>p</p>
+
+      <h3>Sample code:</h3>
+      <code>&lt;p&gt;This is an example paragraph.&lt;/p&gt;</code>
+
+      <h3>Rendered element:</h3>
+      <p>This is an example paragraph.</p>
+
     </section>
 
     <section>
+
       <h2>Bulleted Lists</h2>
+
+      <h3>CSS selector:</h3>
+      <p>ul, li</p>
+
+      <h3>Sample code:</h3>
+      <code>&lt;ul&gt;
+  &lt;li&gt;List 1&lt;/li&gt;
+  &lt;li&gt;List 2&lt;/li&gt;
+  &lt;li&gt;List 3&lt;/li&gt;
+&lt;/ul&gt;</code>
+
+      <h3>Rendered element:</h3>
+      <ul>
+        <li>List 1</li>
+        <li>List 2</li>
+        <li>List 3</li>
+      </ul>
+
     </section>
 
     <section>
+
       <h2>Numbered Lists</h2>
+
+      <h3>CSS selector:</h3>
+      <p>ol, li</p>
+
+      <h3>Sample code:</h3>
+      <code>&lt;ol&gt;
+  &lt;li&gt;List 1&lt;/li&gt;
+  &lt;li&gt;List 2&lt;/li&gt;
+  &lt;li&gt;List 3&lt;/li&gt;
+&lt;/ol&gt;</code>
+
+      <h3>Rendered element:</h3>
+      <ol>
+        <li>List 1</li>
+        <li>List 2</li>
+        <li>List 3</li>
+      </ol>
+
     </section>
 
   </section>
@@ -123,98 +219,116 @@
   <!-- COMBINED ELEMENTS SECTION // -->
   <section id="combined_elements">
 
-    <section>
-      <h2>Main Navigation</h2>
+    <section id="process_analysis_1">
+
+      <h2>Process Analysis 1</h2>
+
+      <p>
+        <br> Time: 4 Weeks - Started in March 2026 <br>
+        Team: John (Coder & Sound Design), Tiffany (2D artist), Linqi (Artist & Animator) <br>
+        Coding Language: C# <br>
+        Game Engine: Unity <br>
+        <br> In IAT 312 Foundations of Game Design, I was involved with two other students in creating a game that had
+        the
+        following features: A narrative story, foldback mechanic, and a complete gameplay. This was part of project two
+        where we were given permission to use any desired game engine in a 4 week period. We decided to use Unity for
+        its
+        easier learning curve compared to unreal engine.
+        Given the 4 week deadline and a small team of 3, our team conducted a meeting through Discord to propose a game
+        setting of a haunted house called Prosopagnosia. We then used FIGMA to plan the layout for the house before we
+        later began with a simple setting and gameplay to balance the time and desire to create a visually appealing
+        game.
+
+        I was tasked with coding the movement, camera, and interactions with the character, and lighting. As the project
+        was done through unity, all coding has to be done through C#. One of the difficulties we experience was our
+        inexperience with Unity's C# language, thus we allocated weekends to learn the language using Unity’s coding
+        tutorials and sources on YouTube.
+        I created a playable character that was capable of controlling its camera, running speed, movement, and
+        interaction with objects. WIth the provided animation assets from Linqi, I used scripts to enable door
+        interactions, item pick ups, cutscenes, and character inventory.
+        One of the difficult tasks was coding interaction and cutscene conditions in the game. I used a hash table which
+        uses key-value so the character can have an inventory system that checks if the player has a key for a locked
+        item
+        using “.ContainsKey “ and it opens the respective door as part of the value.
+        I then handled the lighting and sfx which led to a game with a complete atmospheric and narrative haunted house
+        along with conditions to beat the game. Players had to find items and collect all the necessary pieces to
+        complete
+        the ritual to finish the game.
+
+        Future refinements would involve more possible player interactions and further refining C# knowledge and lead to
+        possible AI enemy behaviors.
+      </p>
+
+      <h3>Artifacts:</h3>
+
+      <img src="img/figmaImg.png" alt="gameSS" width="800" height="600">
+      <img src="img/gameSS.png" alt="gameSS" width="800" height="600">
+
     </section>
 
+    <section id="process_analysis_2">
+
+      <h2>Process Analysis 2</h2>
+
+      <p>
+        Time: 3 + 5 Weeks - Started in November 2025 <br>
+        Team: John (3D Modeler & Animator), Chloe (3D Modeler & Director), Rex (3D Modeler & Animator), Vicola (Sound
+        Design)<br>
+        Modeling: Maya <br>
+        Animation: Blender <br>
+        <br>IAT343 is an animation course taught at Simon Fraser University, the course focuses on designing 3D models
+        through
+        Maya, along with basic animations.
+        We were tasked with preparing models and animation for a 1 minute animation with a clear story in a 3 week
+        deadline after a 5 week planning for storyboard to apply what we learnt in a more complete and challenging
+        objective.
+
+        To plan the pacing of the story while gauging the appropriate large scale animation that tests our skills, we
+        drafted a storyboard based that focuses on human animations, with combat as the main focus.
+        During the process, I was given these tasks:
+      </p>
+
+      <h3>3D Modeling through Maya:</h3>
+      <ul>
+        <li>Shield</li>
+        <li>Cave</li>
+        <li>Stalactites</li>
+      </ul>
+
+      <h3>Animation done through Blender:</h3>
+      <ul>
+        <li>Character walking animation</li>
+        <li>Dragon animation.</li>
+        <li>Action Scene for the character running animation.</li>
+      </ul>
+
+      <p>
+        The biggest achievement done for this project was completing a 1 min 30 second animation with human animations
+        in
+        an action environment within a 3 week deadline.
+        The animation has led to an A grade, but also taught the necessary foundation for future animations with
+        humanoid
+        figures. The skills mentioned are necessary for game design for animation.
+        If another attempt for this project were to be made, experimentation with 2D effects and smear animation would
+        be
+        done to create a more dramatic action scene.
+      </p>
+
+    </section>
 
   </section>
   <!-- // COMBINED ELEMENTS SECTION -->
 
-  <section id="combined_elements">
-    <h2>Process Analysis 1</h2>
+  <footer id="footer">
+
+    <h2>GitHub</h2>
     <p>
-      <br> Time: 4 Weeks - Started in March 2026 <br>
-      Team: John (Coder & Sound Design), Tiffany (2D artist), Linqi (Artist & Animator) <br>
-      Coding Language: C# <br>
-      Game Engine: Unity <br>
-      <br> In IAT 312 Foundations of Game Design, I was involved with two other students in creating a game that had the
-      following features: A narrative story, foldback mechanic, and a complete gameplay. This was part of project two
-      where we were given permission to use any desired game engine in a 4 week period. We decided to use Unity for its
-      easier learning curve compared to unreal engine.
-      Given the 4 week deadline and a small team of 3, our team conducted a meeting through Discord to propose a game
-      setting of a haunted house called Prosopagnosia. We then used FIGMA to plan the layout for the house before we
-      later began with a simple setting and gameplay to balance the time and desire to create a visually appealing game.
-
-      I was tasked with coding the movement, camera, and interactions with the character, and lighting. As the project
-      was done through unity, all coding has to be done through C#. One of the difficulties we experience was our
-      inexperience with Unity's C# language, thus we allocated weekends to learn the language using Unity’s coding
-      tutorials and sources on YouTube.
-      I created a playable character that was capable of controlling its camera, running speed, movement, and
-      interaction with objects. WIth the provided animation assets from Linqi, I used scripts to enable door
-      interactions, item pick ups, cutscenes, and character inventory.
-      One of the difficult tasks was coding interaction and cutscene conditions in the game. I used a hash table which
-      uses key-value so the character can have an inventory system that checks if the player has a key for a locked item
-      using “.ContainsKey “ and it opens the respective door as part of the value.
-      I then handled the lighting and sfx which led to a game with a complete atmospheric and narrative haunted house
-      along with conditions to beat the game. Players had to find items and collect all the necessary pieces to complete
-      the ritual to finish the game.
-
-      Future refinements would involve more possible player interactions and further refining C# knowledge and lead to
-      possible AI enemy behaviors.
+      Link to GitHUB
+      <a href="https://github.com/AvalonRE/iat339_project_301477693" class="intext-link">GitHub Here</a>
     </p>
 
-    <h3>
-      Artifacts:
-    </h3>
-    <img src="img/figmaImg.png" alt="gameSS" width="800" height="600">
-    <img src="img/gameSS.png" alt="gameSS" width="800" height="600">
-
-    <h2>Process Analysis 2</h2>
-    <p>
-      Time: 3 + 5 Weeks - Started in November 2025 <br>
-      Team: John (3D Modeler & Animator), Chloe (3D Modeler & Director), Rex (3D Modeler & Animator), Vicola (Sound Design)<br>
-      Modeling: Maya <br>
-      Animation: Blender <br>
-       <br>IAT343 is an animation course taught at Simon Fraser University, the course focuses on designing 3D models through
-      Maya, along with basic animations.
-      We were tasked with preparing models and animation for a 1 minute animation with a clear story in a 3 week
-      deadline after a 5 week planning for storyboard to apply what we learnt in a more complete and challenging
-      objective.
-
-
-      To plan the pacing of the story while gauging the appropriate large scale animation that tests our skills, we
-      drafted a storyboard based that focuses on human animations, with combat as the main focus.
-      During the process, I was given these tasks:
-
-
-      3D Modeling through Maya:
-      Shield
-      Cave
-      Stalactites
-
-
-      Animation done through Blender:
-      Character walking animation
-      Dragon animation.
-      Action Scene for the character running animation.
-
-
-      The biggest achievement done for this project was completing a 1 min 30 second animation with human animations in
-      an action environment within a 3 week deadline.
-      The animation has led to an A grade, but also taught the necessary foundation for future animations with humanoid
-      figures. The skills mentioned are necessary for game design for animation.
-      If another attempt for this project were to be made, experimentation with 2D effects and smear animation would be
-      done to create a more dramatic action scene
-
-
-
-    </p>
-  </section>
-
-  <footer>
-          <p>Link to GitHUB <a href="https://github.com/AvalonRE/iat339_project_301477693" class="intext-link">GitHub Here</a></p>
   </footer>
+
 </body>
 
 </html>

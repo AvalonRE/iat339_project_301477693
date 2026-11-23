@@ -7,11 +7,15 @@ font
   STYLE GUIDE STYLING 
   Default styling for the style guide 
 */
+
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: sans-serif;
   padding: 2rem;
   color: white;
-  background-color: #000000;
+  background-color: #0e0e0e;
   font-family: 'Inter', sans-serif;
 }
 
@@ -46,7 +50,58 @@ h2{
 */
 
 /* Styling for the navigation button */
-.button-nav {
+
+.button-nav-container{
+  display: inline-block;
+  padding: 0.6em 0.9em;
+  color: #FFF;
+  box-shadow: 0 4px 11.3px rgba(101, 101, 101, 0.25); 
+  border-radius: 4rem;
+  background-color: rgba(39, 39, 39, 0.25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+}
+
+p {
+  background-color: #181818;
+  padding: 0.8rem;
+  border: 0.1rem solid #303030;
+  border-radius: 1rem;
+}
+.button-nav{
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.6em 0.9em;
+  color: #FFF;
+  border-radius: 5rem;
+  text-decoration: none;
+  -webkit-transition: background-color 0.2s ease-out;
+  transition: 150ms;
+}
+
+.button-nav-selected{
+    display: inline-block;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.7rem 1.5rem;
+  color: #FFF;
+  background-color: #181818;
+  border-radius: 5rem;
+  text-decoration: none;
+  -webkit-transition: background-color 0.2s ease-out;
+}
+
+.button-nav:hover,
+.button-nav:focus {
+  background-color: #3815FF;
+  box-shadow: 0 3px #14046e;
+  transform: translateY(-2px);
+}
+
+.button{
   display: inline-block;
   font-size: 1rem;
   font-weight: 300;
@@ -59,7 +114,7 @@ h2{
   transition: background-color 0.2s ease-out;
 }
 
-.button-nav:hover, .button-nav:focus  {
+.button:hover, .button-nav:focus  {
   background-color: #3815FF;
 }
 
@@ -92,6 +147,22 @@ input:focus, input:hover {
 }
 
 
+.form {
+  background-color: #3815FF;
+  border-radius: 3rem;
+  border: none;
+  padding: 0.8rem;
+  color: white;
+  transition: 200ms;
+}
+
+.form:hover, .form:focus {
+  background-color: #1900a8;
+  border-radius: 3rem;
+  border: none;
+  padding: 0.8rem;
+  color: white;
+}
 
 /* 
   TEXT ELEMENTS -------------------
