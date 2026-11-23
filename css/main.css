@@ -1,8 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap');
 /*
 font
 */
-
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap');
 /*
   STYLE GUIDE STYLING 
   Default styling for the style guide 
@@ -66,7 +65,7 @@ h2{
   box-shadow: 0 4px 11.3px rgba(101, 101, 101, 0.25); 
   border-radius: 4rem;
   border: 0.1rem solid #303030;
-  background-color: rgba(39, 39, 39, 0.25);
+  background-color: rgba(19, 19, 19, 0.5);
   display: flex;
   justify-content: center;
   align-items: center;
