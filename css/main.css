@@ -11,12 +11,20 @@ font
 html {
   scroll-behavior: smooth;
 }
+
 body {
   font-family: sans-serif;
   padding: 2rem;
   color: white;
   background-color: #0e0e0e;
   font-family: 'Inter', sans-serif;
+}
+
+p {
+  background-color: #0c0c0c;
+  padding: 0.8rem;
+  border: 0.1rem solid #303030;
+  border-radius: 1rem;
 }
 
 section:not([id]) {
@@ -57,6 +65,7 @@ h2{
   color: #FFF;
   box-shadow: 0 4px 11.3px rgba(101, 101, 101, 0.25); 
   border-radius: 4rem;
+  border: 0.1rem solid #303030;
   background-color: rgba(39, 39, 39, 0.25);
   display: flex;
   justify-content: center;
@@ -64,16 +73,24 @@ h2{
   gap: 10%;
 }
 
-p {
-  background-color: #181818;
-  padding: 0.8rem;
-  border: 0.1rem solid #303030;
+img{
   border-radius: 1rem;
+  border: 0.3rem solid #181818;
+  box-shadow: 0 0 10px #181818;
+  transition: 200ms;
 }
+
+img:focus, img:hover{
+  border-radius: 1rem;
+  border: 0.3rem solid #3815FF;
+  box-shadow: 0 0 10px #3815FF;
+}
+
+
 .button-nav{
   display: inline-block;
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 200;
   padding: 0.6em 0.9em;
   color: #FFF;
   border-radius: 5rem;
@@ -83,7 +100,7 @@ p {
 }
 
 .button-nav-selected{
-    display: inline-block;
+  display: inline-block;
   font-size: 1rem;
   font-weight: 500;
   padding: 0.7rem 1.5rem;
@@ -91,7 +108,6 @@ p {
   background-color: #181818;
   border-radius: 5rem;
   text-decoration: none;
-  -webkit-transition: background-color 0.2s ease-out;
 }
 
 .button-nav:hover,
@@ -164,10 +180,48 @@ input:focus, input:hover {
   color: white;
 }
 
+
+
 /* 
   TEXT ELEMENTS -------------------
 */
 
+.colours {
+  display: flex;
+  align-items: center;
+}
+.colours p {
+  background-color: transparent;
+  border-color: transparent;
+  padding: 0rem;
+}
+
+.black{
+  padding: 1rem;
+  max-width: 1rem;
+  max-height: 1rem;
+  border: 0.1rem solid #131313;
+  background-color: #0e0e0e;
+  margin-bottom: 0.5rem;
+}
+
+.blue{
+  padding: 1rem;
+  max-width: 1rem;
+  max-height: 1rem;
+  border: 0.1rem solid #131313;
+  background-color: #3815FF;
+  margin-bottom: 0.5rem;
+}
+
+.white{
+  padding: 1rem;
+  max-width: 1rem;
+  max-height: 1rem;
+  border: 0.1rem solid #131313;
+  background-color: white;
+  margin-bottom: 0.5rem;
+}
 
 
 
